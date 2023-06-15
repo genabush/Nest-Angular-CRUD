@@ -1,0 +1,27 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@frontend/auth": ["libs/frontend/auth/src/index.ts"],
+      "@frontend/page-not-found": ["libs/frontend/page-not-found/src/index.ts"],
+      "@frontend/products": ["libs/frontend/products/src/index.ts"],
+      "@frontend/users": ["libs/frontend/users/src/index.ts"],
+      "@frontend/core": ["libs/frontend/core/src/index.ts"],
+      "@mono/shared": ["libs/shared/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
