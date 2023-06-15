@@ -1,3 +1,5 @@
-<p>
-  products works!
-</p>
+<ul *ngIf="products$ | async as products">
+  <li *ngFor="let product of products">
+    <product [product]="product"></product>
+  </li>
+</ul>
