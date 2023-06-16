@@ -1,2 +1,2 @@
-export * from './lib/interfaces/product.interface';
-export * from './lib/interfaces/user.interface';
+export * from './lib/enums';
+export * from './lib/interfaces';

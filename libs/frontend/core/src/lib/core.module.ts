@@ -9,11 +9,14 @@ import { EffectsModule } from '@ngrx/effects';
 // services
 import { AuthService, ProductsService, UserService } from './services';
 
+// reducers
+import { appStateReducer } from './store/index';
+
 @NgModule({
   imports: [
     CommonModule,
     EffectsModule.forRoot([]),
-    StoreModule.forRoot({}),
+    StoreModule.forRoot(appStateReducer),
     StoreDevtoolsModule.instrument({
       maxAge: 25,
       logOnly: !isDevMode(),
